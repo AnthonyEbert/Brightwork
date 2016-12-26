@@ -35,7 +35,7 @@ ratio = redperimage / greperimage
 
 plt.subplot(211)
 # since this X is number of image you can write [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
-plt.plot(range(0, len(redperimage)), redperimage, 'ro')
+plt.plot(range(0, len(redperimage)), redperimage, 'ro') # .plot(x-values 1-16, y-values or data, show a red 'o' for each pt
 plt.plot(range(0, len(greperimage)), greperimage, 'go')
 
 plt.subplot(212)
