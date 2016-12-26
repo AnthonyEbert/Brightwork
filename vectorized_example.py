@@ -6,7 +6,7 @@
 import time
 import matplotlib.pyplot as plt 
 
-image = plt.imread("/Users/chimpsarehungry/Dropbox/RiceU/BrightworkClass/image_timeseries/img_0001.jpg")
+image = plt.imread("/Users/chimpsarehungry/Dropbox/RiceU/BrightworkClass/image_timeseries/img_0001.jpg")# reads in image file
 
 # We think the low green values are actually non-specific, background noise. 
 # Lets look at the image without it. 
@@ -15,7 +15,7 @@ image = plt.imread("/Users/chimpsarehungry/Dropbox/RiceU/BrightworkClass/image_t
 time1 = time.time()
 
 ## Built in vectorized functions
-image[ image[:,:,1] < 40 ] = 0
+image[ image[:,:,1] < 40 ] = 0 # all rows, all red, green, blue, if green value < 40 set them to 0
 
 # ASIDE: INDEXING WITH TRUTH ARRAYS
 #############################
@@ -30,7 +30,7 @@ timevec = (time2 - time1)
 print 'time for vectorized: ', timevec
 
 
-################ Loop ##########
+################ Loop e.g. ##########
 
 time3 = time.time()
 
