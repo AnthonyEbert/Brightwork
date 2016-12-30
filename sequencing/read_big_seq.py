@@ -6,7 +6,7 @@
 
 import numpy as np 
 
-my_seqs = np.genfromtxt('sequencereads.txt', delimiter = '\n', dtype = str)
+my_seqs = np.genfromtxt('sequencereads.txt', delimiter = '\n', dtype = str) # reads in data
 
 print my_seqs.size, 'sequences in this file \n'
 
